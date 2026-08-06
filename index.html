@@ -19,18 +19,17 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #ffffff;
-      color: #111111;
+      background: #fff;
+      color: #111;
       line-height: 1.6;
     }
 
-    /* NAVIGATION */
     nav {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: #ffffff;
-      border-bottom: 2px solid #111111;
+      background: white;
+      border-bottom: 2px solid #111;
       padding: 15px 7%;
       display: flex;
       justify-content: space-between;
@@ -51,7 +50,7 @@
 
     nav a {
       text-decoration: none;
-      color: #111111;
+      color: #111;
       font-weight: bold;
     }
 
@@ -59,7 +58,6 @@
       text-decoration: underline;
     }
 
-    /* HERO */
     .hero {
       min-height: 85vh;
       display: flex;
@@ -67,11 +65,11 @@
       align-items: center;
       text-align: center;
       padding: 60px 20px;
-      background: #fafafa;
+      background: #f7f7f7;
     }
 
     .hero-content {
-      max-width: 800px;
+      max-width: 850px;
     }
 
     .hero h1 {
@@ -81,34 +79,32 @@
       margin-bottom: 15px;
     }
 
-    .hero p {
-      font-size: 1.3rem;
-      margin-bottom: 30px;
+    .motto {
+      font-size: 1.4rem;
+      font-style: italic;
+      margin-bottom: 15px;
     }
 
-    .motto {
-      font-style: italic;
-      font-size: 1.1rem;
+    .hero p:not(.motto) {
+      font-size: 1.15rem;
       margin-bottom: 30px;
     }
 
     .button {
       display: inline-block;
-      background: #111111;
+      background: #111;
       color: white;
-      padding: 14px 28px;
+      padding: 14px 30px;
       text-decoration: none;
-      border: 2px solid #111111;
+      border: 2px solid #111;
       font-weight: bold;
-      transition: 0.2s;
     }
 
     .button:hover {
       background: white;
-      color: #111111;
+      color: #111;
     }
 
-    /* GENERAL */
     section {
       padding: 80px 7%;
     }
@@ -122,21 +118,22 @@
 
     .section-subtitle {
       text-align: center;
+      color: #555;
       margin-bottom: 45px;
-      color: #555555;
     }
 
     /* MENU */
+
     .menu-grid {
       max-width: 1100px;
       margin: auto;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
       gap: 25px;
     }
 
     .menu-card {
-      border: 2px solid #111111;
+      border: 2px solid #111;
       padding: 30px;
       text-align: center;
       background: white;
@@ -145,7 +142,7 @@
 
     .menu-card:hover {
       transform: translateY(-5px);
-      box-shadow: 6px 6px 0 #111111;
+      box-shadow: 6px 6px 0 #111;
     }
 
     .menu-icon {
@@ -159,7 +156,7 @@
     }
 
     .menu-card p {
-      color: #555555;
+      color: #555;
       margin-bottom: 15px;
     }
 
@@ -168,44 +165,45 @@
       font-weight: bold;
     }
 
-    /* PACKAGES */
+    /* BOXES */
+
     .packages {
-      background: #111111;
+      background: #111;
       color: white;
     }
 
     .packages .section-subtitle {
-      color: #cccccc;
+      color: #ccc;
     }
 
     .package-grid {
       max-width: 1000px;
       margin: auto;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
       gap: 20px;
     }
 
     .package {
       background: white;
-      color: #111111;
+      color: #111;
       padding: 30px 20px;
       text-align: center;
       border: 2px solid white;
     }
 
     .package h3 {
-      font-size: 2rem;
-      margin-bottom: 10px;
+      font-size: 2.5rem;
     }
 
-    .package .package-price {
+    .package-price {
       font-size: 1.5rem;
       font-weight: bold;
-      margin-bottom: 10px;
+      margin: 8px 0;
     }
 
     /* ABOUT */
+
     .about {
       max-width: 850px;
       margin: auto;
@@ -218,6 +216,7 @@
     }
 
     /* ORDER */
+
     .order-section {
       background: #f5f5f5;
     }
@@ -227,7 +226,7 @@
       margin: auto;
       background: white;
       padding: 35px;
-      border: 2px solid #111111;
+      border: 2px solid #111;
     }
 
     .form-group {
@@ -245,7 +244,7 @@
     textarea {
       width: 100%;
       padding: 13px;
-      border: 2px solid #111111;
+      border: 2px solid #111;
       font-size: 1rem;
       background: white;
     }
@@ -258,9 +257,9 @@
     .submit-button {
       width: 100%;
       padding: 15px;
-      background: #111111;
+      background: #111;
       color: white;
-      border: 2px solid #111111;
+      border: 2px solid #111;
       font-size: 1rem;
       font-weight: bold;
       cursor: pointer;
@@ -268,10 +267,11 @@
 
     .submit-button:hover {
       background: white;
-      color: #111111;
+      color: #111;
     }
 
     /* CONTACT */
+
     .contact {
       text-align: center;
     }
@@ -282,8 +282,9 @@
     }
 
     /* FOOTER */
+
     footer {
-      background: #111111;
+      background: #111;
       color: white;
       text-align: center;
       padding: 30px 20px;
@@ -294,6 +295,7 @@
     }
 
     /* MOBILE */
+
     @media (max-width: 650px) {
       nav {
         flex-direction: column;
@@ -324,6 +326,7 @@
 <body>
 
   <!-- NAVIGATION -->
+
   <nav>
     <div class="logo">SWEET THEORY</div>
 
@@ -338,7 +341,9 @@
 
 
   <!-- HOME -->
+
   <section class="hero" id="home">
+
     <div class="hero-content">
 
       <h1>Sweet Theory</h1>
@@ -348,7 +353,7 @@
       </p>
 
       <p>
-        Fresh homemade desserts made to satisfy every sweet tooth.
+        Homemade desserts made fresh for every sweet tooth.
       </p>
 
       <a href="#order" class="button">
@@ -356,105 +361,171 @@
       </a>
 
     </div>
+
   </section>
 
 
   <!-- MENU -->
+
   <section id="menu">
 
     <h2 class="section-title">Our Menu</h2>
 
     <p class="section-subtitle">
-      Pick your favorite homemade treats.
+      Fresh homemade treats made to order.
     </p>
 
     <div class="menu-grid">
 
       <div class="menu-card">
+
         <div class="menu-icon">🍪</div>
+
         <h3>Cookies</h3>
+
         <p>
-          Freshly baked homemade cookies with a soft, delicious center.
+          Soft, fresh-baked homemade cookies.
         </p>
+
         <div class="price">
-          Starting at $XX
+          Price Coming Soon
         </div>
+
       </div>
 
+
       <div class="menu-card">
+
         <div class="menu-icon">🧁</div>
+
         <h3>Cupcakes</h3>
+
         <p>
           Homemade cupcakes topped with delicious frosting.
         </p>
+
         <div class="price">
-          Starting at $XX
+          Price Coming Soon
         </div>
+
       </div>
 
+
       <div class="menu-card">
+
         <div class="menu-icon">🍰</div>
+
         <h3>Mini Cheesecakes</h3>
+
         <p>
           Individual mini cheesecakes made fresh to order.
         </p>
+
         <div class="price">
-          Starting at $XX
+          Price Coming Soon
         </div>
+
       </div>
 
+
       <div class="menu-card">
+
         <div class="menu-icon">🥐</div>
+
         <h3>Cinnamon Rolls</h3>
+
         <p>
           Soft, homemade cinnamon rolls made fresh.
         </p>
+
         <div class="price">
-          Starting at $XX
+          Price Coming Soon
         </div>
+
       </div>
 
     </div>
+
   </section>
 
 
-  <!-- ORDER PACKAGES -->
+  <!-- ORDER BOXES -->
+
   <section class="packages">
 
     <h2 class="section-title">Choose Your Box</h2>
 
     <p class="section-subtitle">
-      Orders start at 3 items. Mix and match your favorites.
+      Every order starts at 3 items.
     </p>
 
     <div class="package-grid">
 
       <div class="package">
+
         <h3>3</h3>
+
         <div>ITEM BOX</div>
-        <div class="package-price">$XX</div>
-        <p>Perfect for trying something new.</p>
+
+        <div class="package-price">
+          Price Coming Soon
+        </div>
+
+        <p>
+          Perfect for trying something new.
+        </p>
+
       </div>
 
+
       <div class="package">
+
         <h3>6</h3>
+
         <div>ITEM BOX</div>
-        <div class="package-price">$XX</div>
-        <p>More treats to share.</p>
+
+        <div class="package-price">
+          Price Coming Soon
+        </div>
+
+        <p>
+          More treats to share.
+        </p>
+
       </div>
 
+
       <div class="package">
+
         <h3>9</h3>
+
         <div>ITEM BOX</div>
-        <div class="package-price">$XX</div>
-        <p>For bigger cravings.</p>
+
+        <div class="package-price">
+          Price Coming Soon
+        </div>
+
+        <p>
+          For bigger cravings.
+        </p>
+
       </div>
 
+
       <div class="package">
+
         <h3>12</h3>
+
         <div>ITEM BOX</div>
-        <div class="package-price">$XX</div>
-        <p>The ultimate Sweet Theory box.</p>
+
+        <div class="package-price">
+          Price Coming Soon
+        </div>
+
+        <p>
+          The ultimate Sweet Theory box.
+        </p>
+
       </div>
 
     </div>
@@ -463,24 +534,29 @@
 
 
   <!-- ABOUT -->
+
   <section id="about">
 
     <div class="about">
 
-      <h2 class="section-title">About Sweet Theory</h2>
+      <h2 class="section-title">
+        About Sweet Theory
+      </h2>
 
       <p class="section-subtitle">
         The Recipe For Your Sweet Tooth
       </p>
 
       <p>
-        Sweet Theory is a home bakery focused on making fresh,
-        homemade desserts that are perfect for sharing, celebrating,
-        or simply satisfying your sweet tooth.
+        Sweet Theory is a home bakery focused on making
+        fresh, homemade desserts that are perfect for
+        sharing, celebrating, or simply satisfying your
+        sweet tooth.
       </p>
 
       <p>
-        Every order is prepared with care and made fresh for our customers.
+        Every order is prepared with care and made fresh
+        for our customers.
       </p>
 
     </div>
@@ -489,35 +565,26 @@
 
 
   <!-- ORDER FORM -->
+
   <section class="order-section" id="order">
 
-    <h2 class="section-title">Place An Order</h2>
+    <h2 class="section-title">
+      Place An Order
+    </h2>
 
     <p class="section-subtitle">
-      Fill out the form below and we'll get back to you.
+      Fill out the form below to request an order.
     </p>
 
     <div class="order-container">
 
-      <form
-        action="https://formsubmit.co/YOUR-EMAIL-HERE"
-        method="POST"
-      >
-
-        <input
-          type="hidden"
-          name="_subject"
-          value="New Sweet Theory Order"
-        >
-
-        <input
-          type="hidden"
-          name="_captcha"
-          value="false"
-        >
+      <form>
 
         <div class="form-group">
-          <label for="name">Your Name</label>
+
+          <label for="name">
+            Your Name
+          </label>
 
           <input
             type="text"
@@ -526,11 +593,15 @@
             placeholder="Enter your name"
             required
           >
+
         </div>
 
 
         <div class="form-group">
-          <label for="email">Email</label>
+
+          <label for="email">
+            Email
+          </label>
 
           <input
             type="email"
@@ -539,11 +610,15 @@
             placeholder="you@example.com"
             required
           >
+
         </div>
 
 
         <div class="form-group">
-          <label for="phone">Phone Number</label>
+
+          <label for="phone">
+            Phone Number
+          </label>
 
           <input
             type="tel"
@@ -551,16 +626,20 @@
             name="phone"
             placeholder="(555) 555-5555"
           >
+
         </div>
 
 
         <div class="form-group">
-          <label for="dessert">What would you like?</label>
+
+          <label for="dessert">
+            Dessert
+          </label>
 
           <select id="dessert" name="dessert" required>
 
             <option value="">
-              Select a dessert
+              Choose a dessert
             </option>
 
             <option value="Cookies">
@@ -584,16 +663,20 @@
             </option>
 
           </select>
+
         </div>
 
 
         <div class="form-group">
-          <label for="quantity">Order Size</label>
+
+          <label for="quantity">
+            Order Size
+          </label>
 
           <select id="quantity" name="quantity" required>
 
             <option value="">
-              Select quantity
+              Choose a quantity
             </option>
 
             <option value="3">
@@ -613,28 +696,37 @@
             </option>
 
           </select>
+
         </div>
 
 
         <div class="form-group">
-          <label for="details">Order Details</label>
+
+          <label for="details">
+            Order Details
+          </label>
 
           <textarea
             id="details"
             name="details"
-            placeholder="Tell us what flavors, flavors combinations, decorations, or special requests you'd like."
+            placeholder="Tell us your flavors, choices, or special requests."
           ></textarea>
+
         </div>
 
 
         <div class="form-group">
-          <label for="date">Preferred Pickup Date</label>
+
+          <label for="date">
+            Preferred Pickup Date
+          </label>
 
           <input
             type="date"
             id="date"
             name="pickup_date"
           >
+
         </div>
 
 
@@ -653,12 +745,15 @@
 
 
   <!-- CONTACT -->
+
   <section class="contact" id="contact">
 
-    <h2 class="section-title">Contact Sweet Theory</h2>
+    <h2 class="section-title">
+      Contact Sweet Theory
+    </h2>
 
     <p class="section-subtitle">
-      Questions? We'd love to hear from you.
+      Have a question? Get in touch with us.
     </p>
 
     <div class="contact-info">
@@ -684,6 +779,7 @@
 
 
   <!-- FOOTER -->
+
   <footer>
 
     <p>
@@ -695,7 +791,7 @@
     </p>
 
     <p>
-      © 2026 Sweet Theory. All Rights Reserved.
+      © 2026 Sweet Theory
     </p>
 
   </footer>
